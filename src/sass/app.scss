@@ -1,0 +1,25 @@
+.ui {
+  .dropdown {
+
+  }
+}
+#test {
+  .dropdown {
+    position: static;
+    .menu {
+      position: absolute;
+    }
+    .container {
+      display: flex;
+    }
+  }
+}
+#dropdown2 {
+  .menu {
+    position: absolute;
+    left: 0;
+  }
+}
+.test {
+  height: 300px;
+}

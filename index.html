@@ -1,0 +1,634 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="dist/css/semantic.css">
+    <link rel="stylesheet" href="dist/css/app.css">
+    <style>
+        .swiper-container {
+            margin-top: 48px;
+            width: 100%;
+            height: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+    </style>
+    <script src="dist/js/app.js"></script>
+    <script src="src/js/swiper.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+
+
+<div class="ui fixed  menu">
+    <div class="ui container" id="test">
+        <a class="item">
+            <i class="home icon"></i> Home
+        </a>
+        <div class="ui simple dropdown item">
+            产品中心
+            <i class="dropdown icon"></i>
+            <div class="menu ">
+                <div class="ui container">
+                    <div class="ui simple dropdown item" id="dropdown2">
+                        360°无线扬声器
+                        <i class="dropdown icon"></i>
+                        <div class="menu ">
+                            <div class="ui container">
+                                <a class="item">
+                                    <i class="home icon"></i> 360°无线扬声器1
+                                </a>
+                                <a class="item">
+                                    <i class="home icon"></i> 360°无线扬声器2
+                                </a>
+                                <a class="item">
+                                    <i class="home icon"></i> 360°无线扬声器3
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui simple dropdown item" id="dropdown2">
+                        头戴式耳机
+                        <i class="dropdown icon"></i>
+                        <div class="menu ">
+                            <div class="ui container">
+                                <a class="item">
+                                    <i class="grid layout icon"></i> 头戴式耳机1
+                                </a>
+                                <a class="item">
+                                    <i class="grid layout icon"></i> 头戴式耳机2
+                                </a>
+                                <a class="item">
+                                    <i class="grid layout icon"></i> 头戴式耳机3
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui simple dropdown item" id="dropdown2">
+                        360°扬声器
+                        <i class="dropdown icon"></i>
+                        <div class="menu ">
+                            <div class="ui container">
+                                <a class="item">
+                                    <i class="grid layout icon"></i> 360°扬声器1
+                                </a>
+                                <a class="item">
+                                    <i class="grid layout icon"></i> 360°扬声器2
+                                </a>
+                                <a class="item">
+                                    <i class="grid layout icon"></i> 360°扬声器3
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui simple dropdown item" id="dropdown2">
+                        耳塞
+                        <i class="dropdown icon"></i>
+                        <div class="menu ">
+                            <div class="ui container">
+                                <a class="item">
+                                    <i class="grid layout icon"></i> 耳塞1
+                                </a>
+                                <a class="item">
+                                    <i class="grid layout icon"></i> 耳塞2
+                                </a>
+                                <a class="item">
+                                    <i class="grid layout icon"></i> 耳塞3
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui simple dropdown item" id="dropdown2">
+                        功放
+                        <i class="dropdown icon"></i>
+                        <div class="menu ">
+                            <div class="ui container">
+                                <a class="item">
+                                    <i class="grid layout icon"></i> 功放1
+                                </a>
+                                <a class="item">
+                                    <i class="grid layout icon"></i> 功放2
+                                </a>
+                                <a class="item">
+                                    <i class="grid layout icon"></i> 功放3
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui simple dropdown item" id="dropdown2">
+                        升级线材
+                        <i class="dropdown icon"></i>
+                        <div class="menu ">
+                            <div class="ui container">
+                                <a class="item">
+                                    <i class="grid layout icon"></i> 升级线材1
+                                </a>
+                                <a class="item">
+                                    <i class="grid layout icon"></i> 升级线材2
+                                </a>
+                                <a class="item">
+                                    <i class="grid layout icon"></i> 升级线材3
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui simple dropdown item" id="dropdown2">
+                        寻找代理商
+                        <i class="dropdown icon"></i>
+                        <div class="menu ">
+                            <div class="ui container">
+                                <a class="item">
+                                    <i class="grid layout icon"></i> 寻找代理商1
+                                </a>
+                                <a class="item">
+                                    <i class="grid layout icon"></i> 寻找代理商2
+                                </a>
+                                <a class="item">
+                                    <i class="grid layout icon"></i> 寻找代理商3
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--<a class="item"><i class="edit icon"></i> Edit Profile</a>-->
+                <!--<a class="item"><i class="globe icon"></i> Choose Language</a>-->
+                <!--<a class="item"><i class="settings icon"></i> Account Settings</a>-->
+            </div>
+        </div>
+        <div class="ui simple dropdown item">
+            关于
+            <i class="dropdown icon"></i>
+            <div class="menu ">
+                <div class="ui container">
+                    <a class="item">
+                        <i class="home icon"></i> 关于1
+                    </a>
+                    <a class="item">
+                        <i class="home icon"></i> 关于2
+                    </a>
+                    <a class="item">
+                        <i class="home icon"></i> 关于3
+                    </a>
+                </div>
+            </div>
+        </div>
+        <a class="item">
+            <i class="grid layout icon"></i> 其他
+        </a>
+        <div class="right item">
+            <div class="ui input"><input type="text" placeholder="搜索..."></div>
+        </div>
+    </div>
+</div>
+<!-- Swiper -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="https://www.audeze.com/sites/default/files/styles/frontpage_slideshow/adaptive-image/public/ADZ_Homepage_Carousel_LCDi4_LS1.jpg?itok=ZCrSoimw" alt=""/>
+        </div>
+        <div class="swiper-slide">
+            <a href=""><img src="https://www.audeze.com/sites/default/files/styles/frontpage_slideshow/adaptive-image/public/ADZ_Homepage_Carousel_LCD2Classic.jpg?itok=bItEMxII" alt=""/></a>
+        </div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+        <div class="swiper-slide">Slide 10</div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+<!--Swiper.end-->
+
+<!--featurettes-->
+<div class='featurettes' style="padding-top: 40px; padding-bottom: 20px; ">
+    <div class='ui container'>
+        <div class='ui four column stackable grid'>
+            <div class='column'>
+                <div class='featurette'>
+                    <div class='icon'>
+                        <i class="settings icon" style="font-size: 40px;"></i>
+                    </div>
+                    <h3>个人免费</h3>
+                    <div class='content text-muted'>
+                        个人开发者可免费创建 1000 个项目（不限公有、私有），提供最多 5G 的免费代码存储空间
+                    </div>
+                </div>
+            </div>
+            <div class='column'>
+                <div class='featurette'>
+                    <div class='icon'>
+                        <i class="cubes icon" style="font-size: 40px;"></i>
+                    </div>
+                    <h3>代码管理</h3>
+                    <div class='content text-muted'>
+                        支持 Git/SVN 管理，提供代码审核、Bug 跟踪以及 Webhook 钩子回调等功能
+                    </div>
+                </div>
+            </div>
+            <div class='column'>
+                <div class='featurette'>
+                    <div class='icon'>
+                        <i class="sound icon" style="font-size: 40px;"></i>
+                    </div>
+                    <h3>团队协作</h3>
+                    <div class='content text-muted'>
+                        轻量级敏捷项目管理工具，提供需求、任务、问题跟踪功能，提供任务看板工具
+                    </div>
+                </div>
+            </div>
+            <div class='column'>
+                <div class='featurette'>
+                    <div class='icon'>
+                        <i class="film icon" style="font-size: 40px; color: #0d71bb;"></i>
+                    </div>
+                    <h3>质量分析</h3>
+                    <div class='content text-muted'>
+                        一键分析项目源码，直观了解项目代码质量，提供代码安全扫描功能
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--featurettes.end-->
+
+<section>
+    <div class="ui container four cards link stackable" style="padding: 4em 0em;">
+            <div class="card">
+                <div class="image">
+                    <img src="https://cdn.worktile.com/assets/images/home/index-banner-img.png">
+                </div>
+                <div class="content">
+                    <div class="header">Matt Giampietro</div>
+                    <div class="meta">
+                        <a>Friends</a>
+                    </div>
+                    <div class="description">
+                        Matthew is an interior designer living in New York.
+                    </div>
+                </div>
+                <div class="extra content">
+                    <span class="right floated">
+                        Joined in 2013
+                    </span>
+                    <span>
+                        <i class="user icon"></i>
+                        75 Friends
+                    </span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="https://cdn.worktile.com/assets/images/home/index-oa-img2.png">
+                </div>
+                <div class="content">
+                    <div class="header">Molly</div>
+                    <div class="meta">
+                        <span class="date">Coworker</span>
+                    </div>
+                    <div class="description">
+                        Molly is a personal assistant living in Paris.
+                    </div>
+                </div>
+                <div class="extra content">
+                    <span class="right floated">
+                    Joined in 2011
+                    </span>
+                    <span>
+                    <i class="user icon"></i>
+                    35 Friends
+                    </span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="https://cdn.worktile.com/assets/images/home/index-oa-img1.png">
+                </div>
+                <div class="content">
+                    <div class="header">Elyse</div>
+                    <div class="meta">
+                        <a>Coworker</a>
+                    </div>
+                    <div class="description">
+                        Elyse is a copywriter working in New York.
+                    </div>
+                </div>
+                <div class="extra content">
+      <span class="right floated">
+        Joined in 2014
+      </span>
+                    <span>
+        <i class="user icon"></i>
+        151 Friends
+      </span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="https://cdn.worktile.com/assets/images/home/index-oa-img3.png">
+                </div>
+                <div class="content">
+                    <div class="header">Elyse</div>
+                    <div class="meta">
+                        <a>Coworker</a>
+                    </div>
+                    <div class="description">
+                        Elyse is a copywriter working in New York.
+                    </div>
+                </div>
+                <div class="extra content">
+                      <span class="right floated">
+                        Joined in 2014
+                      </span>
+                      <span>
+                        <i class="user icon"></i>
+                        151 Friends
+                      </span>
+                </div>
+            </div>
+    </div>
+</section>
+
+<!--section-->
+<section style="background-color: #999; padding: 1em 0em; margin-bottom: 40px;">
+    <div class="ui container inverted center aligned red column">
+        <h3 style="color: white">The resume is broken. Humans are not. Hire more humanely.</h3>
+    </div>
+</section>
+<!--section.end-->
+
+
+<section>
+    <div class="ui container special three cards">
+        <div class="card">
+            <div class="blurring dimmable image">
+                <div class="ui dimmer">
+                    <div class="content">
+                        <div class="center">
+                            <div class="ui inverted button">Add Friend</div>
+                        </div>
+                    </div>
+                </div>
+                <img src="https://cdn.worktile.com/assets/images/home/index-oa-img3.png">
+            </div>
+            <div class="content">
+                <a class="header">Team Fu</a>
+                <div class="meta">
+                    <span class="date">Create in Sep 2014</span>
+                </div>
+            </div>
+            <div class="extra content">
+                <a>
+                    <i class="users icon"></i>
+                    2 Memberssdfsdf
+                </a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="blurring dimmable image">
+                <div class="ui dimmer">
+                    <div class="content">
+                        <div class="center">
+                            <div class="ui inverted button">Add Friend</div>
+                        </div>
+                    </div>
+                </div>
+                <img src="https://cdn.worktile.com/assets/images/home/index-oa-img3.png">
+            </div>
+            <div class="content">
+                <a class="header">Team Fu</a>
+                <div class="meta">
+                    <span class="date">Create in Sep 2014</span>
+                </div>
+            </div>
+            <div class="extra content">
+                <a>
+                    <i class="users icon"></i>
+                    2 Memberssdfsdf
+                </a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="blurring dimmable image">
+                <div class="ui dimmer">
+                    <div class="content">
+                        <div class="center">
+                            <div class="ui inverted button">Add Friend</div>
+                        </div>
+                    </div>
+                </div>
+                <img src="https://cdn.worktile.com/assets/images/home/index-oa-img3.png">
+            </div>
+            <div class="content">
+                <a class="header">Team Fu</a>
+                <div class="meta">
+                    <span class="date">Create in Sep 2014</span>
+                </div>
+            </div>
+            <div class="extra content">
+                <a>
+                    <i class="users icon"></i>
+                    2 Memberssdfsdf
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="ui container four cards">
+        <div class="ui card">
+            <div class="ui slide masked reveal image">
+                <img src="https://cdn.worktile.com/assets/images/home/index-oa-img1.png" class="visible content">
+                <img src="https://cdn.worktile.com/assets/images/home/index-oa-img2.png" class="hidden content">
+            </div>
+            <div class="content">
+                <a class="header">Team Fu &amp; Hess</a>
+                <div class="meta">
+                    <span class="date">Create in Sep 2014</span>
+                </div>
+            </div>
+            <div class="extra content">
+                <a>
+                    <i class="users icon"></i>
+                    2 Members
+                </a>
+            </div>
+        </div>
+        <div class="ui card">
+            <div class="ui slide masked reveal image">
+                <img src="https://cdn.worktile.com/assets/images/home/index-oa-img1.png" class="visible content">
+                <img src="https://cdn.worktile.com/assets/images/home/index-oa-img2.png" class="hidden content">
+            </div>
+            <div class="content">
+                <a class="header">Team Fu &amp; Hess</a>
+                <div class="meta">
+                    <span class="date">Create in Sep 2014</span>
+                </div>
+            </div>
+            <div class="extra content">
+                <a>
+                    <i class="users icon"></i>
+                    2 Members
+                </a>
+            </div>
+        </div>
+        <div class="ui card">
+            <div class="ui slide masked reveal image">
+                <img src="https://cdn.worktile.com/assets/images/home/index-oa-img1.png" class="visible content">
+                <img src="https://cdn.worktile.com/assets/images/home/index-oa-img2.png" class="hidden content">
+            </div>
+            <div class="content">
+                <a class="header">Team Fu &amp; Hess</a>
+                <div class="meta">
+                    <span class="date">Create in Sep 2014</span>
+                </div>
+            </div>
+            <div class="extra content">
+                <a>
+                    <i class="users icon"></i>
+                    2 Members
+                </a>
+            </div>
+        </div>
+        <div class="ui card">
+            <div class="ui slide masked reveal image">
+                <img src="https://cdn.worktile.com/assets/images/home/index-oa-img1.png" class="visible content">
+                <img src="https://cdn.worktile.com/assets/images/home/index-oa-img2.png" class="hidden content">
+            </div>
+            <div class="content">
+                <a class="header">Team Fu &amp; Hess</a>
+                <div class="meta">
+                    <span class="date">Create in Sep 2014</span>
+                </div>
+            </div>
+            <div class="extra content">
+                <a>
+                    <i class="users icon"></i>
+                    2 Members
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="ui inverted vertical footer segment">
+    <div class="ui center aligned container">
+        <div class="ui stackable inverted divided grid">
+            <div class="three wide column">
+                <h4 class="ui inverted header">Group 1</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">Link One</a>
+                    <a href="#" class="item">Link Two</a>
+                    <a href="#" class="item">Link Three</a>
+                    <a href="#" class="item">Link Four</a>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header">Group 2</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">Link One</a>
+                    <a href="#" class="item">Link Two</a>
+                    <a href="#" class="item">Link Three</a>
+                    <a href="#" class="item">Link Four</a>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header">Group 3</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">Link One</a>
+                    <a href="#" class="item">Link Two</a>
+                    <a href="#" class="item">Link Three</a>
+                    <a href="#" class="item">Link Four</a>
+                </div>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header">Footer Header</h4>
+                <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+            </div>
+        </div>
+        <div class="ui inverted section divider"></div>
+        <img src="assets/images/logo.png" class="ui centered mini image">
+        <div class="ui horizontal inverted small divided link list">
+            <a class="item" href="#">Site Map</a>
+            <a class="item" href="#">Contact Us</a>
+            <a class="item" href="#">Terms and Conditions</a>
+            <a class="item" href="#">Privacy Policy</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script>
+    $(function() {
+        $('.special.cards .image').dimmer({
+            on: 'hover'
+        });
+    });
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        effect: 'fade',
+        autoplay: {
+            delay: 6000
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        },
+        autoHeight: true
+    });
+
+
+</script>
+</html>

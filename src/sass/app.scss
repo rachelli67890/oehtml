@@ -3,7 +3,7 @@
 
   }
 }
-#test {
+#ross_menu {
   .dropdown {
     position: static;
     .menu {
@@ -13,13 +13,15 @@
       display: flex;
     }
   }
-}
-#dropdown2 {
   .menu {
-    position: absolute;
-    left: 0;
+    .dropdown2 {
+      .menu {
+        position: absolute;
+        left: 0;
+      }
+    }
+    .test {
+      height: 300px;
+    }
   }
-}
-.test {
-  height: 300px;
 }

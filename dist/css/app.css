@@ -549,6 +549,41 @@ button.swiper-pagination-bullet {
 
 .swiper-container-coverflow .swiper-wrapper {
   -ms-perspective: 1200px; }
+/* For desktop: */
+.swiper-container {
+  margin-top: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50%; }
+  @media only screen and (max-width: 768px) {
+    .swiper-container {
+      height: 40%; } }
+  @media only screen and (max-width: 568px) {
+    .swiper-container {
+      height: 34%; } }
+  @media only screen and (max-width: 468px) {
+    .swiper-container {
+      height: 28%; } }
+  .swiper-container .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center; }
+    .swiper-container .swiper-slide img {
+      width: 100%; }
+
 #ross_menu .dropdown {
   position: static; }
   #ross_menu .dropdown .menu {
@@ -562,3 +597,12 @@ button.swiper-pagination-bullet {
 
 #ross_menu .menu .test {
   height: 300px; }
+
+@media only screen and (max-width: 700px) {
+  .ui.fixed.menu {
+    display: none !important; }
+    .ui.fixed.menu .secondary.menu .toc.item {
+      display: block; } }
+
+.ross-other-products {
+  padding-bottom: 40px; }

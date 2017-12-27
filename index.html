@@ -7,43 +7,41 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="dist/css/semantic.css">
     <link rel="stylesheet" href="dist/css/app.css">
-    <style>
-        .swiper-container {
-            margin-top: 48px;
-            width: 100%;
-            height: 500px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-            /* Center slide text vertically */
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center;
-            align-items: center;
-        }
-    </style>
+    <!--[if lt IE 9]><script src = "http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script><![endif]-->
     <script src="dist/js/app.js"></script>
     <script src="src/js/swiper.min.js"></script>
     <title>Document</title>
+
+    <script>
+        $(document)
+            .ready(function() {
+
+                $('.ui.sidebar')
+                    .sidebar('attach events', '.toc.item')
+                ;
+
+            })
+        ;
+    </script>
+
 </head>
 <body>
 
+<!-- Sidebar Menu -->
+<div class="ui vertical inverted sidebar menu">
+    <a class="active item">Home</a>
+    <a class="item">Work23234234</a>
+    <a class="item">Company</a>
+    <a class="item">Careers</a>
+    <a class="item">Login</a>
+    <a class="item">Signup</a>
+</div>
 
-
-<div class="ui fixed  menu">
+<div class="ui fixed  menu secondary">
     <div class="ui container" id="ross_menu">
+        <a class="toc item">
+            <i class="sidebar icon"></i>
+        </a>
         <a class="item">
             <i class="home icon"></i> Home
         </a>
@@ -227,12 +225,16 @@
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
 </div>
+
 <!--Swiper.end-->
+
+
+
 
 <!--featurettes-->
 <div class='featurettes' style="padding-top: 40px; padding-bottom: 20px; ">
-    <div class='ui container'>
-        <div class='ui four column stackable grid'>
+    <div class='ui container '>
+        <div class='ui four column special grid'>
             <div class='column'>
                 <div class='featurette'>
                     <div class='icon'>
@@ -283,7 +285,7 @@
 <!--featurettes.end-->
 
 <section>
-    <div class="ui container four cards link stackable" style="padding: 4em 0em;">
+    <div class="ui container three cards link stackable" style="padding: 4em 0em;">
             <div class="card">
                 <div class="image">
                     <img src="https://cdn.worktile.com/assets/images/home/index-banner-img.png">
@@ -332,29 +334,6 @@
             </div>
             <div class="card">
                 <div class="image">
-                    <img src="https://cdn.worktile.com/assets/images/home/index-oa-img1.png">
-                </div>
-                <div class="content">
-                    <div class="header">Elyse</div>
-                    <div class="meta">
-                        <a>Coworker</a>
-                    </div>
-                    <div class="description">
-                        Elyse is a copywriter working in New York.
-                    </div>
-                </div>
-                <div class="extra content">
-      <span class="right floated">
-        Joined in 2014
-      </span>
-                    <span>
-        <i class="user icon"></i>
-        151 Friends
-      </span>
-                </div>
-            </div>
-            <div class="card">
-                <div class="image">
                     <img src="https://cdn.worktile.com/assets/images/home/index-oa-img3.png">
                 </div>
                 <div class="content">
@@ -388,8 +367,8 @@
 <!--section.end-->
 
 
-<section>
-    <div class="ui container special three cards">
+<section class="ross-other-products">
+    <div class="ui container stackable three cards">
         <div class="card">
             <div class="blurring dimmable image">
                 <div class="ui dimmer">
@@ -463,7 +442,7 @@
             </div>
         </div>
     </div>
-    <div class="ui container four cards">
+    <div class="ui container four stackable cards">
         <div class="ui card">
             <div class="ui slide masked reveal image">
                 <img src="https://cdn.worktile.com/assets/images/home/index-oa-img1.png" class="visible content">
@@ -616,7 +595,7 @@
         loop: true,
         effect: 'fade',
         autoplay: {
-            delay: 6000
+            delay: 100000
         },
         pagination: {
             el: '.swiper-pagination',
@@ -626,7 +605,7 @@
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev'
         },
-        autoHeight: true
+        autoHeight: false
     });
 
 

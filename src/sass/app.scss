@@ -1,19 +1,12 @@
   /* For desktop: */
   .swiper-container {
     margin-top: 48px;
+    margin-bottom: 20px;
     //width: 100%;
     margin-left: auto;
     margin-right: auto;
-    height: 50%;
-    @media only screen and (max-width: 768px) {
-      height: 40%;
-    }
-    @media only screen and (max-width: 568px) {
-      height:34%;
-    }
-    @media only screen and (max-width: 468px) {
-      height:28%;
-    }
+
+
     .swiper-slide {
       text-align: center;
       font-size: 18px;
@@ -38,15 +31,23 @@
   }
 
 #ross_menu {
-  .dropdown {
-    position: static;
-    .menu {
-      position: absolute;
-    }
-    .container {
-      display: flex;
+  .menu {
+    background: #000;
+    border-top: 1px solid #fff;
+  }
+  .fixed {
+    .dropdown.simple {
+      position: static;
+      .dropdown-content {
+        position: absolute;
+
+      }
+      .container {
+        display: flex;
+      }
     }
   }
+
   .menu {
     .dropdown2 {
       .menu {
@@ -54,20 +55,29 @@
         left: 0;
       }
     }
-    .test {
-      height: 300px;
-    }
   }
-}
+
+  .toc.item {
+    display: none;
+  }
   @media only screen and (max-width: 700px) {
-    .ui.fixed.menu {
-      display: none !important;
-      .secondary.menu .toc.item {
+    .ui.fixed.menu.secondary {
+      .item {
+        display: none;
+      }
+      .toc.item {
         display: block;
       }
     }
 
   }
+}
+
+.featurettes {
+  .ui.container {
+    padding: 12px;
+  }
+}
 
 .ross-other-products {
   padding-bottom: 40px;

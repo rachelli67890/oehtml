@@ -47,7 +47,9 @@ module.exports = {
         alias: {
             //  也可以不写,如果通过 npm install 就直接用 npm 的了 npm install jquery --save
             // jquery: './jquery-3.2.1.min.js',
-            semantic: './semantic.min.js'
+            semantic: './semantic.min.js',
+            vide: './jquery.vide.min.js',
+            wow: './wow.min.js'
         }
     },
     plugins: [

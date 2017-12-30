@@ -75,10 +75,23 @@
 
 .featurettes {
   .ui.container {
-    padding: 12px;
+    padding: 30px 10px 20px 24px;
+    .column {
+      box-shadow: -1px 0px 0px 0px #D4D4D5;
+    }
   }
 }
+.ross_position_1 {
+  padding-top:  26px;
+}
 
-.ross-other-products {
+.ross-position2 {
   padding-bottom: 40px;
+  .dimmable {
+    .dimmer {
+      p {
+        color: #767676;
+      }
+    }
+  }
 }

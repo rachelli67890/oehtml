@@ -2942,7 +2942,14 @@ button.swiper-pagination-bullet {
     display: block; } }
 
 .featurettes .ui.container {
-  padding: 12px; }
+  padding: 30px 10px 20px 24px; }
+  .featurettes .ui.container .column {
+    box-shadow: -1px 0px 0px 0px #D4D4D5; }
 
-.ross-other-products {
+.ross_position_1 {
+  padding-top: 26px; }
+
+.ross-position2 {
   padding-bottom: 40px; }
+  .ross-position2 .dimmable .dimmer p {
+    color: #767676; }

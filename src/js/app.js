@@ -9,6 +9,11 @@ require('../css/animate.min.css');
 require('../sass/app.scss');
 
 import $ from 'jquery';
+
+// import 'expose-loader?$!jquery';
+// import 'expose-loader?jQuery!jquery';
+
+
 import 'semantic';
 import 'vide';
 import 'wow';
